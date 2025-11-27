@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Si el archivo o directorio solicitado existe, sirve directamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirige todas las demás solicitudes a index.html
+RewriteRule ^ index.html [L]

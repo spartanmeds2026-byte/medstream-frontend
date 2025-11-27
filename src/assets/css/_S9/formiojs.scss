@@ -1,0 +1,66 @@
+@mixin formio-theme {
+	@import "formiojs/dist/formio.full.css";
+	@import "./../../../../node_modules/@formio/premium/dist/premium.css";
+
+	.formio-component-textarea .ck.ck-editor ul,
+	.formio-component-textarea .ck.ck-editor ol {
+		margin-left: 0px !important;
+	}
+
+	.editgrid-listgroup {
+		margin-bottom: 10px !important;
+	}
+
+	.formio-select-autocomplete-input {
+		padding: 0px !important;
+	}
+
+	.choices {
+		@apply overflow-visible;
+	}
+
+	.choices.form-group.formio-choices.is-open.is-focused {
+		@apply transition duration-200 ease-in-out w-full text-sm shadow-sm rounded-md placeholder:text-slate-400/90 ring-4 ring-primary ring-opacity-20 border-primary border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:ring-opacity-50 dark:placeholder:text-slate-500/80;
+	}
+
+	.builder-sidebar_search {
+		@apply focus:ring-0 focus:shadow-none;
+	}
+
+	.ck.ck-editor {
+		border-radius: 0.6rem !important;
+	}
+
+	.ck.ck-toolbar {
+		border-top-left-radius: 0.6rem !important;
+		border-top-right-radius: 0.6rem !important;
+	}
+	.ck.ck-editor__main > .ck-editor__editable {
+		border-bottom-left-radius: 0.6rem !important;
+		border-bottom-right-radius: 0.6rem !important;
+	}
+
+	.formio-dialog.formio-dialog-theme-default .formio-dialog-content {
+		width: 90%;
+	}
+
+	.component-btn-group .component-settings-button {
+		line-height: 1em;
+		@apply w-6 h-6 text-sm p-1 rounded-full;
+	}
+
+	.btn.btn-secondary.component-settings-button.component-settings-button-edit {
+		@apply bg-white;
+	}
+
+	.imgCover,
+	.imgCover * {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.imgCover img {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: cover;
+	}
+}
